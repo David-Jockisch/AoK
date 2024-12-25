@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kindness Generator</title>
+    <style>
+        body {
+            font-family: "Georgia", serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f5f3e6;
+            color: #4a3b2b;
+            text-align: center;
+            padding: 20px;
+        }
+        .main-header {
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            font-size: 1em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #3e2f20;
+        }
+        .container {
+            max-width: 600px;
+            width: 90%;
+            height: 200px;
+            padding: 30px;
+            background: #fffaf0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            border: 2px solid #d4c2a5;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .container p {
+            font-size: 1.2rem;
+            margin: 0;
+            text-align: center;
+        }
+        .header {
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #3e2f20;
+        }
+        .footer {
+            font-size: 0.9rem;
+            color: #5a5043;
+        }
+        @media (min-width: 768px) {
+            .main-header {
+                font-size: 1.5em;
+            }
+            .header {
+                font-size: 2rem;
+            }
+            .container p {
+                font-size: 1.5rem;
+            }
+            .footer {
+                font-size: 1rem;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const actsOfKindness = [
+                "Smile at a stranger today.",
+                "Hold the door open for someone.",
+                "Send a kind message to a friend you haven’t spoken to in a while.",
+                "Donate food or clothing to a local charity.",
+                "Compliment someone sincerely.",
+                "Offer to help a neighbor with a chore or task.",
+                "Buy a coffee for the person behind you in line.",
+                "Leave a positive review for a small business you love.",
+                "Thank a teacher or mentor for their guidance.",
+                "Write a note of appreciation to someone who made a difference in your life.",
+                "Pay for someone’s meal at a drive-thru.",
+                "Volunteer at a local shelter or community center.",          
+                "Pick up litter in your neighborhood or park.",
+                "Let someone merge in front of you in traffic.",
+                "Donate books to a local library or school.",
+                "Give a genuine compliment to three people today.",
+                "Make a handmade gift for a loved one.",
+                "Call a family member just to say hello.",
+                "Bake cookies or treats and share them with your coworkers or neighbors.",
+                "Send an anonymous letter of encouragement to someone in need.",
+                "Offer to babysit for a friend or family member who needs a break.",
+                "Share a motivational book or article with a friend.",
+                "Donate pet supplies to a local animal shelter.",
+                "Clean up a shared space, like a breakroom or community area, without being asked.",
+                "Mentor someone who could benefit from your experience.",
+                "Leave a thank-you note for your mail carrier or delivery person.",
+                "Prepare a meal for someone who might be going through a tough time.",
+                "Help someone carry their groceries or packages.",
+                "Send a handwritten letter to a friend or family member.",
+                "Bring extra supplies, like pencils or snacks, to share at work or school.",
+                "Visit or call someone who might be feeling lonely.",
+                "Leave kind and encouraging messages on sticky notes in public places.",
+                "Help someone study or prepare for an important test or meeting.",
+                "Offer to mow a lawn or shovel snow for a neighbor.",
+                "Be patient and kind in a difficult situation, even if it’s stressful.",
+                "Sponsor a child’s participation in a sports team or arts program.",
+                "Pay it forward by buying a gift card and leaving it for someone to find.",
+                "Take the time to listen actively to someone who needs to talk.",
+                "Help someone who is lost by giving them clear directions.",
+                "Bring a surprise treat to your coworkers or classmates.",
+                "Write a positive comment on someone’s social media post.",
+                "Donate blood if you’re able to.",
+                "Offer to run an errand for someone who is busy or unable to do so themselves.",
+                "Share your umbrella with someone on a rainy day.",
+                "Give up a close parking spot to someone who may need it more.",
+                "Be a peacemaker in a conflict, offering understanding and kindness.",
+                "Offer to teach someone a skill you know well.",
+                "Encourage someone who seems down or unmotivated." 
+            ];
+
+            const randomAct = actsOfKindness[Math.floor(Math.random() * actsOfKindness.length)];
+            document.getElementById("random-act").textContent = randomAct;
+        });
+    </script>
+</head>
+<body>
+    <div class="main-header">Refresh the page for a new act of kindness to complete.</div>
+
+    <div class="container">
+        <p id="random-act"></p>
+    </div>
+    <div class="footer">Be kind to one another, tender-hearted, forgiving each other, just as God in Christ also has forgiven you. <br>
+Ephesians 4:32
+</div>
+</body>
+</html>
